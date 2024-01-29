@@ -1,0 +1,13 @@
+package SK_DSA;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int n=10;
+		Test ts=new Test();
+		
+	}
+	public static void test(Test ) {
+		
+	}
+}

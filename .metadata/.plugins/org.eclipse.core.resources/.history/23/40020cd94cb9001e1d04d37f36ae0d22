@@ -1,0 +1,13 @@
+package SK_DSA.BInary_Search;
+
+public class First_Last {
+	public static void main(String[]args) {
+		
+		int []ans= {-1,-1};
+		ans[0]=search(arr,target,true);
+        if(ans[0]!=-1){
+		ans[1]=search(arr,target,false);}
+		return ans;
+	}
+	
+}

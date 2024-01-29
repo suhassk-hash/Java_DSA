@@ -1,0 +1,58 @@
+class Solution {
+    public  int findInMountainArray(int target, MountainArray mountainArr) {
+       int start=0;
+    int end=mountainArr.length()-1;
+    while(start<end) {
+    	int middle=start+(end-start)/2;
+    	if(mountainArr.get(middle)>mountainArr.get(middle+1)) {
+    		end=middle;
+    	}
+    	else {
+    		start=middle+1;
+    	}
+    }
+    int x=check( mountainArr,end,target);
+    if(x==-1){
+     x=checkk( mountainArr,start,target);
+    }
+    return x;
+}    
+public int check(MountainArray mountainArr,int end,int target){
+    int start=0;
+    	while(start<=end) {
+		int middle=start+(end-start/2);
+
+			if(target<mountainArr.get(middle)) {//in case of descending ordered array
+				end=middle-1;		//changes to start=middle+1;
+			}
+			else if(target>mountainArr.get(middle)) {
+				start=middle+1;		//changes to end=middle-1;
+			}
+			else if(target==mountainArr.get(middle)) {
+				return middle;
+			}
+
+	}
+	return-1;
+}
+public int checkk(MountainArray mountainArr,int start,int target){
+        int end=mountainArr.length()-1;
+    	while(start<=end) {
+		int middle=start+(end-start)/2;
+
+			if(target<mountainArr.get(middle)) {//in case of descending ordered array
+				end=middle+1;		//changes to start=middle+1;
+			}
+			else if(target>mountainArr.get(middle)) {
+				start=middle-1;		//changes to end=middle-1;
+			}
+			else if(target==mountainArr.get(middle)) {
+                System.out.println(middle);
+				return middle;
+                
+			}
+
+	}
+	return-1;
+}
+}

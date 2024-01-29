@@ -1,0 +1,16 @@
+package SK_DSA.Sort;
+
+public class Selection_Sort {
+public static void main(String[] args) {
+	
+}
+public static void sort(int [] arr) {
+	for(int i=0;i<arr.length;i++) {
+		for(int j=0;j<arr.length-i-1) {
+			if(arr[i]>arr[j]) {
+				
+			}
+		}
+	}
+}
+}

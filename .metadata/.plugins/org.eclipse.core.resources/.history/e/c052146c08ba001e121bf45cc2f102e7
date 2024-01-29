@@ -1,0 +1,10 @@
+package SK_DSA.BInary_Search;
+
+public class Rotated_array {
+public static void main(String[]args) {
+	
+}
+public static void check(int [] arr,int target) {
+	
+}
+}

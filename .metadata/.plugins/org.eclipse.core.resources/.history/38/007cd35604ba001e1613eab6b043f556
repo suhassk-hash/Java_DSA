@@ -1,0 +1,21 @@
+package SK_DSA;
+
+import java.util.Scanner;
+
+public class Test {
+	private int n=10;
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int m=sc.nextInt();
+		test(m);
+	}
+	public static void test(int n) {
+		this.n=n;
+	}
+	public int getN() {
+		return n;
+	}
+	public void setN(int n) {
+		this.n = n;
+	}
+}

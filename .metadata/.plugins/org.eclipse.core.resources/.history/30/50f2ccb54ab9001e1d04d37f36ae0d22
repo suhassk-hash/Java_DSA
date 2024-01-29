@@ -1,0 +1,10 @@
+package SK_DSA.BInary_Search;
+
+public class First_Last {
+	public static void main() {
+		
+	}
+	 public int[] searchRange(int[] nums, int target) {
+		 int start=0,end=arr.length-1;
+	    }
+}
