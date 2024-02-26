@@ -4,8 +4,7 @@ public class reverse{
 static int sum=0;
 public static void main(String [] args) {
 	System.out.println(sd(1000987545));
-	rev(100);
-	System.out.println(sum);
+	System.out.println(check_palin(12321));
 }
 public static String sd(int n) {
 	if(n<=0) {
@@ -22,5 +21,9 @@ public static void rev(int n) {
 	sum=sum*10+rem;
 	rev(n/10);
 	
+}
+public static boolean check_palin(int n){
+	rev(n);
+	return n==sum;
 }
 }
